@@ -10,7 +10,5 @@ Feel free to customize layouts and components to change how the tab view looks.
     <ActionBar class="action-bar">
         <Label class="action-bar-title" text="Home"></Label>
     </ActionBar>
-    <StackLayout>
-        <Button text="Scan Barcode" tap="scanBarcode" />
-    </StackLayout>  
+    <Button text="Scan Barcode" tap="scanBarcode"/>
 </Page>
