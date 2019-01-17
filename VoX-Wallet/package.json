@@ -16,6 +16,8 @@
     },
     "dependencies": {
         "nativescript-barcodescanner": "^3.0.0",
+        "nativescript-camera": "^4.1.1",
+        "nativescript-plugin-firebase": "^7.6.1",
         "nativescript-theme-core": "~1.0.4",
         "tns-core-modules": "~5.1.0"
     },

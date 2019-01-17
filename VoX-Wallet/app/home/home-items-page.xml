@@ -10,12 +10,7 @@ Feel free to customize layouts and components to change how the tab view looks.
     <ActionBar class="action-bar">
         <Label class="action-bar-title" text="Home"></Label>
     </ActionBar>
-
-    <ListView items="{{ items }}" itemTap="onItemTap" class="list-group">
-        <ListView.itemTemplate>
-            <StackLayout orientation="horizontal" class="list-group-item">
-                <Label text="{{ name }}" textWrap="true"></Label>
-            </StackLayout>
-        </ListView.itemTemplate>
-    </ListView>
+    <StackLayout>
+        <Button text="Scan Barcode" tap="scanBarcode" />
+    </StackLayout>  
 </Page>

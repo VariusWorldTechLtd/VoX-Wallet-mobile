@@ -5,6 +5,8 @@ import { NavigatedData, Page } from "tns-core-modules/ui/page";
 import { HomeViewModel } from "./home-view-model";
 import { Item } from "./shared/item";
 
+import { MLKitBarcodeScanner } from "nativescript-plugin-firebase/mlkit/barcodescanning";
+
 export function onNavigatingTo(args: NavigatedData) {
     const page = <Page>args.object;
     page.bindingContext = new HomeViewModel();
