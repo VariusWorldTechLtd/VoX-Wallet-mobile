@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "697715834204",
+    "firebase_url": "https://vox-wallet-a2ce2.firebaseio.com",
+    "project_id": "vox-wallet-a2ce2",
+    "storage_bucket": "vox-wallet-a2ce2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:697715834204:android:a4aa2d05cde8d63b",
+        "android_client_info": {
+          "package_name": "com.vwt.voxwallet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "697715834204-o8versg8k1dvqqelucve74a7q8m3krsc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyClg0EPsrFOAWp6FDv7FRaILYaLXRbJcO8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

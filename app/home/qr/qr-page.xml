@@ -1,0 +1,26 @@
+<!--
+This is the page that is presented in the 'Search' tab.
+Feel free to customize layouts and components to change how the tab view looks.
+-->
+<Page
+    class="page"
+    navigatingTo="onNavigatingTo"  
+    xmlns="http://schemas.nativescript.org/tns.xsd"
+    xmlns:FirebaseMLKitBarcodeScanner="nativescript-plugin-firebase/mlkit/barcodescanning">
+
+    <ActionBar class="action-bar">
+        <NavigationButton tap="onBackButtonTap" android.systemIcon="ic_menu_back"/>
+        <Label class="action-bar-title" text="{{ name }}"></Label>
+    </ActionBar>
+    <GridLayout>
+        <!-- <Label class="m-10 h3" verticalAlignment="top" text="{{ description }}"></Label> -->
+         <MLKitBarcodeScanner
+            width="300"
+            height="400"
+            formats="QR_CODE"
+            preferFrontCamera="false"
+            [torchOn]="true"
+            (scanResult)="onBarcodeScanningResult($event)">
+        </MLKitBarcodeScanner>
+    </GridLayout>
+</Page>
