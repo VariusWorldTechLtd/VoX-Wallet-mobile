@@ -1,6 +1,6 @@
 {
     "nativescript": {
-        "id": "org.nativescript.VoXWallet",
+        "id": "com.vwt.voxwallet",
         "tns-android": {
             "version": "5.1.0"
         },

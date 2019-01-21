@@ -1,25 +1,21 @@
-import { View } from "tns-core-modules/ui/core/view";
-import { ItemEventData } from "tns-core-modules/ui/list-view";
+import { EventData } from "tns-core-modules/data/observable";
+import { Button } from "tns-core-modules/ui/button";
 import { NavigatedData, Page } from "tns-core-modules/ui/page";
-
 import { HomeViewModel } from "./home-view-model";
-import { Item } from "./shared/item";
-
-import { MLKitBarcodeScanner } from "nativescript-plugin-firebase/mlkit/barcodescanning";
+// import { Item } from "./shared/item";
 
 export function onNavigatingTo(args: NavigatedData) {
     const page = <Page>args.object;
     page.bindingContext = new HomeViewModel();
 }
 
-export function onItemTap(args: ItemEventData) {
-    const view = <View>args.view;
-    const page = <Page>view.page;
-    const tappedItem = <Item>view.bindingContext;
+export function onScanBarcode(args: EventData) {
+    const button: Button = <Button>args.object;
+    const page: Page = button.page;
 
     page.frame.navigate({
-        moduleName: "home/home-item-detail/home-item-detail-page",
-        context: tappedItem,
+        moduleName: "home/qr",
+        // context: tappedItem,
         animated: true,
         transition: {
             name: "slide",

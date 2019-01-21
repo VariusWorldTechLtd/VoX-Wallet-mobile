@@ -6,9 +6,6 @@ export class HomeViewModel extends Observable {
 
     constructor() {
         super();
-
-
-
         /* this.items = new Array<Item>(
             {
                 name: "Item 1",
