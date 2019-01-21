@@ -3,7 +3,7 @@ import { ItemEventData } from "tns-core-modules/ui/list-view";
 import { NavigatedData, Page } from "tns-core-modules/ui/page";
 
 import { HomeViewModel } from "./home-view-model";
-import { Item } from "./shared/item";
+// import { Item } from "./shared/item";
 
 import { MLKitBarcodeScanner } from "nativescript-plugin-firebase/mlkit/barcodescanning";
 
@@ -15,11 +15,11 @@ export function onNavigatingTo(args: NavigatedData) {
 export function onItemTap(args: ItemEventData) {
     const view = <View>args.view;
     const page = <Page>view.page;
-    const tappedItem = <Item>view.bindingContext;
+    // const tappedItem = <Item>view.bindingContext;
 
     page.frame.navigate({
-        moduleName: "home/home-item-detail/home-item-detail-page",
-        context: tappedItem,
+        // moduleName: "home/home-item-detail/home-item-detail-page",
+        // context: tappedItem,
         animated: true,
         transition: {
             name: "slide",
