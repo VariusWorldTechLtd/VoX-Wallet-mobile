@@ -10,5 +10,7 @@ Feel free to customize layouts and components to change how the tab view looks.
     <ActionBar class="action-bar">
         <Label class="action-bar-title" text="Home"></Label>
     </ActionBar>
-    <Button text="Scan Barcode" (tap)="onScanBarcode($event)"/>
+    <GridLayout>
+        <Button text="Scan Barcode" tap="onScanBarcode"/>
+    </GridLayout>
 </Page>
