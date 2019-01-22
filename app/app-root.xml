@@ -7,6 +7,6 @@ http://docs.nativescript.org/cookbook/ui/tab-view
 <TabView androidTabsPosition="bottom">
     <TabViewItem title="Scan" 
        ios:iconSource="res://tabIcons/home" android:iconSource="res://home">
-        <Frame defaultPage="home/home-page"></Frame>
+        <Frame defaultPage="pages/home/home-page"></Frame>
     </TabViewItem>
 </TabView>
