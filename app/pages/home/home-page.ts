@@ -1,10 +1,9 @@
 import { EventData } from "tns-core-modules/data/observable";
-import { Button } from "tns-core-modules/ui/button";
-import { NavigatedData, Page } from "tns-core-modules/ui/page";
-import { ROUTES } from "~/core/helpers";
+// import { Button } from "tns-core-modules/ui/button";
+// import { NavigatedData, Page } from "tns-core-modules/ui/page";
 // import { HomeViewModel } from "./home-view-model";
 
-// import { goToQRPage } from "~/core/helpers/nav.helper";
+import { goToQRPage } from "~/core/helpers/nav.helper";
 
 // export function onNavigatingTo(args: NavigatedData) {
 //     const page = <Page>args.object;
@@ -12,16 +11,5 @@ import { ROUTES } from "~/core/helpers";
 // }
 
 export function onScanBarcode(args: EventData) {
-    const button: Button = <Button>args.object;
-    const page: Page = button.page;
-    page.frame.navigate({
-        moduleName: ROUTES.qrPage,
-        // context: object,
-        animated: true,
-        transition: {
-            name: "slide",
-            duration: 200,
-            curve: "ease"
-        }
-    });
+    goToQRPage();
 }

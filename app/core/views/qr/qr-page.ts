@@ -7,12 +7,13 @@ import { QRViewModel } from "~/core/models/qr-view-model";
 
 let qrViewModel: QRViewModel;
 
-// function onLoaded(args: NavigatedData) {
-//     const page = <Page>args.object;
-//     page.bindingContext = new QRViewModel();
-// }
+export function onLoaded(args: NavigatedData) {
+    const page = <Page>args.object;
+    qrViewModel = new QRViewModel();
+    page.bindingContext = qrViewModel;
+}
 
-export function onNavigatingTo(args: NavigatedData) {
+export function navigatingTo(args: EventData) {
     const page = <Page>args.object;
     qrViewModel = new QRViewModel();
     page.bindingContext = qrViewModel;
