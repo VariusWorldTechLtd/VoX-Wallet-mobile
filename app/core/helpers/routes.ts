@@ -1,3 +1,3 @@
 export const ROUTES = {
-  qrPage: "~/core/views/qr/qr-page"
+  qrPage: "pages/home/qr/qr-page"
 };
