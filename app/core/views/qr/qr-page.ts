@@ -1,12 +1,11 @@
 import { MLKitScanBarcodesOnDeviceResult } from "nativescript-plugin-firebase/mlkit/barcodescanning";
 // View
 import { EventData } from "tns-core-modules/ui/core/view";
-// NavigatedData,
-import { Page } from "tns-core-modules/ui/page";
+import { Page, NavigatedData } from "tns-core-modules/ui/page";
 import { goBack } from "~/core/helpers/nav.helper";
 import { QRViewModel } from "~/core/models/qr-view-model";
 
-let qrViewModel: QRViewModel;
+let qrViewModel: QRViewModel = new QRViewModel();
 
 // export function onLoaded(args: NavigatedData) {
 //     const page = <Page>args.object;
@@ -14,9 +13,8 @@ let qrViewModel: QRViewModel;
 //     page.bindingContext = qrViewModel;
 // }
 
-export function navigatingTo(args: EventData) {
+export function navigatingTo(args: NavigatedData) {
     const page = <Page>args.object;
-    qrViewModel = new QRViewModel();
     page.bindingContext = qrViewModel;
 }
 

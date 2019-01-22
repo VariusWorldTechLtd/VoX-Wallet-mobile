@@ -1,7 +1,7 @@
 import { EventData } from "tns-core-modules/data/observable";
 // import { Button } from "tns-core-modules/ui/button";
-// import { NavigatedData, Page } from "tns-core-modules/ui/page";
-// import { HomeViewModel } from "./home-view-model";
+//import { NavigatedData, Page } from "tns-core-modules/ui/page";
+//import { HomeViewModel } from "./home-view-model";
 
 import { goToQRPage } from "~/core/helpers/nav.helper";
 
