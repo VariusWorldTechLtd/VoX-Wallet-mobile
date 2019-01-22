@@ -1,14 +1,13 @@
 <!--
 This is the page that is presented in the 'Search' tab.
 Feel free to customize layouts and components to change how the tab view looks.
+    loaded="onLoaded"
 -->
 <Page
     class="page"
     navigatingTo="onNavigatingTo"  
-    loaded="onLoaded"
     xmlns="http://schemas.nativescript.org/tns.xsd"
     xmlns:FirebaseMLKitBarcodeScanner="nativescript-plugin-firebase/mlkit/barcodescanning">
-
 
     <ActionBar class="action-bar">
         <NavigationButton tap="onBackButtonTap" android.systemIcon="ic_menu_back"/>
@@ -23,6 +22,7 @@ Feel free to customize layouts and components to change how the tab view looks.
             android:processEveryNthFrame="5"
             ios:processEveryNthFrame="10"
             preferFrontCamera="false"
+            pause="pause"
             scanResult="onBarcodeScanningResult" />
     </StackLayout>
 </Page>
