@@ -1,9 +1,10 @@
 <!--
 This is the page that is presented in the 'Home' tab.
 Feel free to customize layouts and components to change how the tab view looks.
-navigatingTo="onNavigatingTo"  
+  
 -->
 <Page
+    navigatingTo="onNavigatingTo"
     class="page"
     xmlns="http://schemas.nativescript.org/tns.xsd">
 
